@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 16/05/2013 04:55:18 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping package="com.edu.tpv.login.entity">
+ <class name="Intentos" table="tbcintentos">
+  <id length="3" name="id" type="java.lang.Integer">
+   <column name="fiid"/>
+   <generator class="assigned"/>
+  </id>
+  <many-to-one class="Usuarios" fetch="select" name="usuarios">
+   <column name="fiidusuario"/>
+  </many-to-one>
+  <property generated="never" lazy="false" length="2" name="noIntentos" type="java.lang.Integer">
+   <column name="finointentos"/>
+  </property>
+  <property generated="never" lazy="false" length="2"
+   name="intentosMaximos" type="java.lang.Integer">
+   <column name="fiintentosmaximos"/>
+  </property>
+  <property generated="never" lazy="false" length="2" name="minutos" type="java.lang.Integer">
+   <column name="fiminutos"/>
+  </property>
+  <property generated="never" lazy="false" name="activo" type="boolean">
+   <column name="ftiactivo"/>
+  </property>
+ </class>
+</hibernate-mapping>

@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 16/05/2013 04:43:00 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping package="com.edu.tpv.login.entity">
+    <class name="AsigPermisos" table="tbcasigpermisos">
+        <id name="id" type="java.lang.Integer">
+            <column name="fiid" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="usuarios" class="Usuarios" fetch="select">
+            <column name="fiiduser" />
+        </many-to-one>
+        <many-to-one name="moduloOperacional" class="ModuloOperacional" fetch="select">
+            <column name="fvcidmodulo" />
+        </many-to-one>
+        <many-to-one name="empresas" class="Empresas" fetch="select">
+            <column name="fvcidempresa" />
+        </many-to-one>
+    </class>
+</hibernate-mapping>

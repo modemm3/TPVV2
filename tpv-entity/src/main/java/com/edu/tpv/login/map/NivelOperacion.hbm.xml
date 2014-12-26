@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 12/05/2013 07:58:55 AM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping package="com.edu.tpv.login.entity">
+ <class name="NivelOperacion" table="tbcniveloperacion">
+  <id name="id" type="int">
+   <column name="fiid"/>
+   <generator class="assigned"/>
+  </id>
+  <property generated="never" lazy="false" length="50" name="nombre"
+   not-null="true" type="java.lang.String">
+   <column name="fvcnombre"/>
+  </property>
+  <property generated="never" lazy="false" length="2" name="digitos" type="java.lang.Integer">
+   <column name="fidigitos"/>
+  </property>
+ </class>
+</hibernate-mapping>

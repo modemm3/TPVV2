@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 12/05/2013 10:07:50 AM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping package="com.edu.tpv.login.entity">
+ <class name="ModuloOperacional" table="tbcmodulooperacional">
+  <id length="50" name="idC" type="java.lang.String">
+   <column name="fvcid"/>
+   <generator class="assigned"/>
+  </id>
+  <property generated="never" lazy="false" length="50" name="nombre"
+   not-null="true" type="java.lang.String">
+   <column name="fvcnombre"/>
+  </property>
+  <property generated="never" lazy="false" length="255"
+   name="descripcion" type="java.lang.String">
+   <column name="fvcdescripcion"/>
+  </property>
+  <property generated="never" lazy="false" length="255" name="llave" type="java.lang.String">
+   <column name="fvcllave"/>
+  </property>
+  <property generated="never" lazy="false" length="70" name="bd" type="java.lang.String">
+   <column name="fvcdb"/>
+  </property>
+  <property generated="never" lazy="false" name="activo" type="java.lang.Boolean">
+   <column name="ftiactivo"/>
+  </property>
+  <property generated="never" lazy="false" name="fechaCreacion"
+   not-null="true" type="java.sql.Timestamp">
+   <column name="ftsfechacreacion"/>
+  </property>
+  <property generated="never" lazy="false" name="fechaModificacion"
+   not-null="true" type="java.sql.Timestamp">
+   <column name="ftsfechamodificacion"/>
+  </property>
+  <many-to-one class="Usuarios" fetch="select" name="usuario">
+   <column name="fiiduser"/>
+  </many-to-one>
+  <property generated="never" lazy="false" name="esPadre" type="java.lang.Boolean">
+   <column name="ftiespadre"/>
+  </property>
+  <property generated="never" lazy="false" length="255" name="clase"
+   not-null="true" type="java.lang.String">
+   <column name="fvcclase"/>
+  </property>
+  <property generated="never" lazy="false" length="255" name="titulo"
+   not-null="true" type="java.lang.String">
+   <column name="fvctitle"/>
+  </property>
+  <many-to-one class="TipoAplicacion" fetch="select" name="tipoAplicacion">
+   <column name="fiidtipoaplicacion"/>
+  </many-to-one>
+  <many-to-one class="NivelOperacion" fetch="select" name="nivelOperacion">
+   <column name="fiidnivel"/>
+  </many-to-one>
+  <property generated="never" lazy="false" name="esModulo" type="java.lang.Boolean">
+   <column name="ftiesmodulo"/>
+  </property>
+  <property generated="never" lazy="false" name="acumulativa" type="java.lang.Boolean">
+   <column name="fbacumulativa"/>
+  </property>
+  <property generated="never" lazy="false" name="abreVentana"
+   not-null="true" type="java.lang.Boolean">
+   <column name="ftiabreventana"/>
+  </property>
+  <property generated="never" lazy="false" length="255" name="url"
+   not-null="true" type="java.lang.String">
+   <column name="fvcurl"/>
+  </property>
+ </class>
+</hibernate-mapping>

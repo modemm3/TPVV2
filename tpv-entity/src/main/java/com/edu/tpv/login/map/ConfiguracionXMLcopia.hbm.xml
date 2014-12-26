@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 13/06/2013 01:20:59 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping package="com.edu.tpv.login.entity">
+    <class name="ConfiguracionXML" table="tacconfiguracionxml">
+         <id name="idC" type="string">
+            <column name="fvcid"/>
+            <generator class="assigned"/>
+        </id> 
+        <property name="controlador" type="java.lang.String">
+            <column name="fvcdriver_class" />
+        </property>
+        <property name="password" type="java.lang.String">
+            <column name="fvcpassword" />
+        </property>
+        <property name="url" type="java.lang.String">
+            <column name="fvcurl" />
+        </property>
+        <property name="nameUsuario" type="java.lang.String">
+            <column name="fvcusername" />
+        </property>
+        <property name="lenguaje" type="java.lang.String">
+            <column name="fvcdialect" />
+        </property>
+        <many-to-one name="gpoSistemas" class="GrupoSistemas" fetch="select">
+            <column name="fiid" />
+        </many-to-one>
+        <many-to-one name="empresa" class="Empresas" fetch="select">
+            <column name="fvcid" />
+        </many-to-one>
+    </class>
+</hibernate-mapping>

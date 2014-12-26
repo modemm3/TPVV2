@@ -1,0 +1,15 @@
+13:49:51.231  353  [main] ERROR c.e.tpv.loader.ConfigurationLoader - creation instance ConfigurationLoader
+13:49:51.236  358  [main] ERROR c.edu.tpv.utility.ConnectionManager - show db name: login
+13:49:51.236  358  [main] INFO  c.edu.tpv.utility.ConnectionManager - I am fine.
+13:49:51.236  358  [main] WARN  c.edu.tpv.utility.ConnectionManager - I love programming.
+13:49:51.236  358  [main] ERROR c.edu.tpv.utility.ConnectionManager - I am programming.
+13:52:49.888  322  [main] INFO  c.e.tpv.loader.ConfigurationLoader - creation instance ConfigurationLoader
+13:52:49.893  327  [main] INFO  c.edu.tpv.utility.ConnectionManager - show db name: login
+13:52:49.893  327  [main] INFO  c.edu.tpv.utility.ConnectionManager - I am fine.
+13:52:49.894  328  [main] WARN  c.edu.tpv.utility.ConnectionManager - I love programming.
+13:52:49.894  328  [main] ERROR c.edu.tpv.utility.ConnectionManager - I am programming.
+22:05:37.877  390  [main] INFO  c.e.tpv.loader.ConfigurationLoader - creation instance ConfigurationLoader
+22:05:37.886  399  [main] INFO  c.edu.tpv.utility.ConnectionManager - show db name: login
+22:05:37.886  399  [main] INFO  c.edu.tpv.utility.ConnectionManager - I am fine.
+22:05:37.886  399  [main] WARN  c.edu.tpv.utility.ConnectionManager - I love programming.
+22:05:37.887  400  [main] ERROR c.edu.tpv.utility.ConnectionManager - I am programming.

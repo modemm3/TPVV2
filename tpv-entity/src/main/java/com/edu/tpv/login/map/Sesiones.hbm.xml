@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 16/05/2013 05:07:52 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping package="com.edu.tpv.login.entity">
+ <class name="Sesiones" table="tbcsesiones">
+  <id name="id" type="int">
+   <column name="fiid"/>
+   <generator class="assigned"/>
+  </id>
+  <many-to-one class="Usuarios" fetch="select" name="usuarios">
+   <column name="fiidusuario"/>
+  </many-to-one>
+  <property generated="never" lazy="false" length="400"
+   name="idSesiones" not-null="true" type="java.lang.String">
+   <column name="fvcidsesiones"/>
+  </property>
+  <property generated="never" lazy="false" name="fechaAcceso"
+   not-null="true" type="java.sql.Timestamp">
+   <column name="ftsfechaacceso"/>
+  </property>
+  <property generated="never" lazy="false" name="fechaUltimoAcceso"
+   not-null="true" type="java.sql.Timestamp">
+   <column name="ftsfechaultimoacceso"/>
+  </property>
+  <property generated="never" lazy="false" name="activo" type="java.lang.Boolean">
+   <column name="ftiactivo"/>
+  </property>
+ </class>
+</hibernate-mapping>

@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 16/05/2013 05:05:26 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping package="com.edu.tpv.login.entity">
+ <class name="Mapeos" table="tbcmapeos">
+  <id name="id" type="int">
+   <column name="fiid"/>
+   <generator class="assigned"/>
+  </id>
+  <property generated="never" lazy="false" length="255" name="nombre"
+   not-null="true" type="java.lang.String">
+   <column name="fvcnombre"/>
+  </property>
+  <many-to-one class="GrupoSistemas" fetch="select" name="grupoSistemas">
+   <column name="figruposistemasid"/>
+  </many-to-one>
+  <property generated="never" lazy="false" name="activo" type="boolean">
+   <column name="ftiactivo"/>
+  </property>
+ </class>
+</hibernate-mapping>

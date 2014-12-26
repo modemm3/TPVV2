@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 16/05/2013 04:58:35 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping package="com.edu.tpv.login.entity">
+ <class name="LogAccesos" table="tbclogaccesos">
+  <id name="id" type="java.lang.Integer">
+   <column name="fiid"/>
+   <generator class="assigned"/>
+  </id>
+  <many-to-one class="ModuloOperacional" fetch="select" name="moduloOperacional">
+   <column name="fvcidmodulo"/>
+  </many-to-one>
+  <property generated="never" lazy="false" name="fechaAcceso"
+   not-null="true" type="java.sql.Timestamp">
+   <column name="ftsfechaacceso"/>
+  </property>
+  <many-to-one class="Usuarios" fetch="select" name="usuarios">
+   <column name="fiiduser"/>
+  </many-to-one>
+  <property generated="never" lazy="false" length="30" name="ipPublica" type="java.lang.String">
+   <column name="fvcippublica"/>
+  </property>
+  <property generated="never" lazy="false" length="30" name="ipPrivada" type="java.lang.String">
+   <column name="fvcipprivada"/>
+  </property>
+ </class>
+</hibernate-mapping>

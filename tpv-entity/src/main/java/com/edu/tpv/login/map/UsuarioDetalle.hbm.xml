@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 15/05/2013 03:43:40 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping package="com.edu.tpv.login.entity">
+ <class name="UsuarioDetalle" table="tbcusuariodetalle">
+  <id name="id" type="int">
+   <column name="fiid"/>
+   <generator class="assigned"/>
+  </id>
+  <property generated="never" lazy="false" length="50"
+   name="nombreCorto" type="java.lang.String">
+   <column name="fvcnombrecorto"/>
+  </property>
+  <property generated="never" lazy="false" length="100"
+   name="nombreCompleto" type="java.lang.String">
+   <column name="fvcnombrecompleto"/>
+  </property>
+  <property generated="never" lazy="false" length="100" name="nombres" type="java.lang.String">
+   <column name="fvcnombres"/>
+  </property>
+  <property generated="never" lazy="false" length="50"
+   name="apellidoPaterno" type="java.lang.String">
+   <column name="fvcapellidopaterno"/>
+  </property>
+  <property generated="never" lazy="false" length="50"
+   name="apellidoMaterno" type="java.lang.String">
+   <column name="fvcapellidomaterno"/>
+  </property>
+  <property generated="never" lazy="false" length="30" name="telefono" type="java.lang.String">
+   <column name="fvctelefono"/>
+  </property>
+  <property generated="never" lazy="false" length="255" name="direccion" type="java.lang.String">
+   <column name="fvcdireccion"/>
+  </property>
+  <property generated="never" lazy="false" length="20" name="curp" type="java.lang.String">
+   <column name="fvccurp"/>
+  </property>
+  <property generated="never" lazy="false" length="20" name="rfc" type="java.lang.String">
+   <column name="fvcrfc"/>
+  </property>
+  <property generated="never" lazy="false" name="fechaAcceso"
+   not-null="true" type="java.sql.Timestamp">
+   <column name="ftsfechaacceso"/>
+  </property>
+  <property generated="never" lazy="false" length="80" name="correo" type="java.lang.String">
+   <column name="fvccorreo"/>
+  </property>
+ </class>
+</hibernate-mapping>

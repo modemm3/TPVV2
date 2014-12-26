@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 12/05/2013 11:46:57 AM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping package="com.edu.tpv.login.entity">
+ <class name="Rol" table="TACROL">
+  <id name="id" type="int">
+   <column name="FIID"/>
+   <generator class="assigned"/>
+  </id>
+  <many-to-one class="Usuarios" fetch="select" name="usuario">
+   <column name="FIIDUSER"/>
+  </many-to-one>
+  <many-to-one class="ModuloOperacional" fetch="select" name="moduloOperacional">
+   <column name="FCIDMODULO"/>
+  </many-to-one>
+ </class>
+</hibernate-mapping>

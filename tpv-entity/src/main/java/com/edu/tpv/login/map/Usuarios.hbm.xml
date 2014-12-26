@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 9/05/2013 10:59:42 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping package="com.edu.tpv.login.entity">
+ <class name="Usuarios" table="tbcusuarios">
+  <id name="id" type="int">
+   <column name="fiid"/>
+   <generator class="assigned"/>
+  </id>
+  <many-to-one class="UsuarioDetalle" fetch="select" name="usuarioDetalle">
+   <column name="fiidusuariodetalle"/>
+  </many-to-one>
+  <property generated="never" lazy="false" name="nombre" type="java.lang.String">
+   <column name="fvcnombre"/>
+  </property>
+  <property generated="never" lazy="false" name="password" type="java.lang.String">
+   <column name="fvcpassword"/>
+  </property>
+  <property generated="never" lazy="false" name="activo" type="boolean">
+   <column name="ftiactivo"/>
+  </property>
+  <property generated="never" lazy="false" name="fechaCreacion" type="java.sql.Timestamp">
+   <column name="ftsfechacreacion"/>
+  </property>
+  <property generated="never" lazy="false" name="fechaModificacion" type="java.sql.Timestamp">
+   <column name="ftsfechamodificacion"/>
+  </property>
+  <many-to-one class="Usuarios" fetch="select" name="usuarioModifica">
+   <column name="fiidusuariomodifica"/>
+  </many-to-one>
+  <property generated="never" lazy="false" name="ultimaFechaAcceso" type="java.sql.Timestamp">
+   <column name="ftsultimafechaacceso"/>
+  </property>
+  <property generated="never" lazy="false"
+   name="periodoCambioContrasenia" type="java.sql.Timestamp">
+   <column name="ftsperiodocambiocontrasenias"/>
+  </property>
+  <property generated="never" lazy="false"
+   name="habilitarCambioContrasenia" type="boolean">
+   <column name="ftihabilitarcambiocontrasenia"/>
+  </property>
+  <property generated="never" lazy="false"
+   name="noDiasAnticipadosCambContrasenia" type="int">
+   <column name="finodiasanticipadoscambiocontrasenia"/>
+  </property>
+  <property generated="never" lazy="false" name="noSesiones" type="int">
+   <column name="finosesiones"/>
+  </property>
+  <many-to-one class="PreguntasSecretas" fetch="select" name="preguntasSecretas">
+   <column name="fiidpreguntasecreta"/>
+  </many-to-one>
+  <property generated="never" lazy="false" name="respuestaSecreta" type="java.lang.String">
+   <column name="fvcrespuestasecreta"/>
+  </property>
+ </class>
+</hibernate-mapping>

@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 15/08/2013 09:09:35 AM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.edu.tpv.login.entity.Years" table="tbcyear">
+        <id name="clave" type="int">
+            <column name="fiid" />
+            <generator class="assigned" />
+        </id>
+        <property name="claveEmpresa" type="string">
+            <column name="fvcid" length="50" not-null="true" />
+        </property>
+        <property name="year" type="string">
+            <column name="fcyear" length="4" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

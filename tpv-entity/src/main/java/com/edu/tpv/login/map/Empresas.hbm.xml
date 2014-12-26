@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 12/05/2013 07:53:54 AM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping package="com.edu.tpv.login.entity">
+ <class name="Empresas" table="tbcempresas">
+  <id length="50" name="idC" type="java.lang.String">
+   <column name="fvcid"/>
+   <generator class="assigned"/>
+  </id>
+  <property generated="never" lazy="false" length="255"
+   name="tituloEmpresa" not-null="true" type="java.lang.String">
+   <column name="fvctituloempresa"/>
+  </property>
+  <property generated="never" lazy="false" length="255"
+   name="primerTitulo" not-null="true" type="java.lang.String">
+   <column name="fvcprimertitulo"/>
+  </property>
+  <property generated="never" lazy="false" length="255"
+   name="segundoTitulo" type="java.lang.String">
+   <column name="fvcsegundotitulo"/>
+  </property>
+  <property generated="never" lazy="false" length="255" name="dirUno" type="java.lang.String">
+   <column name="fvcdiruno"/>
+  </property>
+  <property generated="never" lazy="false" length="255" name="dirDos" type="java.lang.String">
+   <column name="fvcdirdos"/>
+  </property>
+  <property generated="never" lazy="false" length="20" name="rfc" type="java.lang.String">
+   <column name="fvcrfc"/>
+  </property>
+  <property generated="never" lazy="false" length="15" name="padron" type="java.lang.String">
+   <column name="fvcpadron"/>
+  </property>
+  <property generated="never" lazy="false" length="15" name="iva" type="java.lang.String">
+   <column name="fvciva"/>
+  </property>
+  <property generated="never" lazy="false" length="15" name="imss" type="java.lang.String">
+   <column name="fvcimss"/>
+  </property>
+  <property generated="never" lazy="false" length="15" name="regCamara" type="java.lang.String">
+   <column name="fvcregcamara"/>
+  </property>
+  <property generated="never" lazy="false" length="15" name="regEstatal" type="java.lang.String">
+   <column name="fvcregestatal"/>
+  </property>
+  <property generated="never" lazy="false" length="20" name="curp" type="java.lang.String">
+   <column name="fvccurp"/>
+  </property>
+ </class>
+</hibernate-mapping>
