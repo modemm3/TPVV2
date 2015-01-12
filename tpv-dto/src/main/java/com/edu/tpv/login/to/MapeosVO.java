@@ -2,16 +2,16 @@ package com.edu.tpv.login.to;
 
 import com.edu.tpv.login.jdbc.dto.DTO;
 
-public class MapeosTO extends DTO{
+public class MapeosVO extends DTO{
 	
-	private GrupoSistemasTO grupoSistemasVO;
+	private GrupoSistemasVO grupoSistemasVO;
 	private boolean activo;
 
-	public MapeosTO() {
+	public MapeosVO() {
 		super();
 	}
 
-	public MapeosTO(int id, String nombre, GrupoSistemasTO grupoSistemasVO, boolean activo) {
+	public MapeosVO(int id, String nombre, GrupoSistemasVO grupoSistemasVO, boolean activo) {
 		this.id = id;
 		this.nombre = nombre;
 		this.grupoSistemasVO = grupoSistemasVO;
@@ -30,11 +30,11 @@ public class MapeosTO extends DTO{
 //		this.setTotalRegistros(mapeos.getTotalRegistros());
 //	}
 
-	public GrupoSistemasTO getGrupoSistemasVO() {
+	public GrupoSistemasVO getGrupoSistemasVO() {
 		return grupoSistemasVO;
 	}
 
-	public void setGrupoSistemasVO(GrupoSistemasTO grupoSistemasVO) {
+	public void setGrupoSistemasVO(GrupoSistemasVO grupoSistemasVO) {
 		this.grupoSistemasVO = grupoSistemasVO;
 	}
 

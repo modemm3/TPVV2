@@ -4,7 +4,7 @@ import java.sql.Timestamp;
 
 import com.edu.tpv.login.jdbc.dto.DTO;
 
-public class UsuarioDetalleTO extends DTO{
+public class UsuarioDetalleVO extends DTO{
 	
 	private String nombreCorto;
 	private String nombreCompleto;
@@ -18,11 +18,11 @@ public class UsuarioDetalleTO extends DTO{
 	private Timestamp fechaAcceso;
 	private String correo;
 
-	public UsuarioDetalleTO() {
+	public UsuarioDetalleVO() {
 		super();
 	}
 
-	public UsuarioDetalleTO(int id, String nombreCorto, String nombreCompleto, String nombres, String apellidoPaterno, String apellidoMaterno, String telefono,
+	public UsuarioDetalleVO(int id, String nombreCorto, String nombreCompleto, String nombres, String apellidoPaterno, String apellidoMaterno, String telefono,
 			String direccion, String curp, String rfc, Timestamp fechaAcceso, String correo) {
 		this.id = id;
 		this.nombreCorto = nombreCorto;

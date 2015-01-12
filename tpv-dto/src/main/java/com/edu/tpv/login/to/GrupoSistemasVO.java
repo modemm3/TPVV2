@@ -2,16 +2,16 @@ package com.edu.tpv.login.to;
 
 import com.edu.tpv.login.jdbc.dto.DTO;
 
-public class GrupoSistemasTO extends DTO{
+public class GrupoSistemasVO extends DTO{
 
 	
 	private static final long serialVersionUID = 348423932218766087L;
 
-	public GrupoSistemasTO() {
+	public GrupoSistemasVO() {
 		super();
 	}
 
-	public GrupoSistemasTO(int id, String nombre, String descripcion) {
+	public GrupoSistemasVO(int id, String nombre, String descripcion) {
 		this.id = id;
 		this.nombre = nombre;
 		this.descripcion = descripcion;

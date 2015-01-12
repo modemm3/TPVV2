@@ -4,24 +4,24 @@ import java.sql.Timestamp;
 
 import com.edu.tpv.login.jdbc.dto.DTO;
 
-public class ModuloOperacionalTO extends DTO{
+public class ModuloOperacionalVO extends DTO{
 	
 	private String llave;
 	private String bd;
 	private boolean activo;
 	private Timestamp fechaCreacion;
 	private Timestamp fechaModificacion;
-	private UsuariosTO usuariosVO;
+	private UsuariosVO usuariosVO;
 	private boolean esPadre;
 	private String clase;
 	private String titulo;
-	private TipoAplicacionTO tipoAplicacionVO;
-	private NivelOperacionTO nivelOperacionVO;
+	private TipoAplicacionVO tipoAplicacionVO;
+	private NivelOperacionVO nivelOperacionVO;
 	private boolean esModulo;
 	private boolean abreVentana;
 	private String url;
 	private boolean acumulativa;
-	public ModuloOperacionalTO() {
+	public ModuloOperacionalVO() {
 		super();
 	}
 
@@ -52,9 +52,9 @@ public class ModuloOperacionalTO extends DTO{
 //		this.setAcumulativa(moduloOperacional.isAcumulativa());
 //	}
 
-	public ModuloOperacionalTO(String idC, String nombre, String descripcion, String llave, String bd, boolean activo, Timestamp fechaCreacion,
-			Timestamp fechaModificacion, UsuariosTO usuariosVO, boolean esPadre, String clase, String titulo, TipoAplicacionTO tipoAplicacionVO,
-			NivelOperacionTO nivelOperacionVO,String url) {
+	public ModuloOperacionalVO(String idC, String nombre, String descripcion, String llave, String bd, boolean activo, Timestamp fechaCreacion,
+			Timestamp fechaModificacion, UsuariosVO usuariosVO, boolean esPadre, String clase, String titulo, TipoAplicacionVO tipoAplicacionVO,
+			NivelOperacionVO nivelOperacionVO,String url) {
 		this.idC = idC;
 		this.nombre = nombre;
 		this.descripcion = descripcion;
@@ -150,27 +150,27 @@ public class ModuloOperacionalTO extends DTO{
 			this.esModulo = true;
 	}
 
-	public UsuariosTO getUsuariosVO() {
+	public UsuariosVO getUsuariosVO() {
 		return usuariosVO;
 	}
 
-	public void setUsuariosVO(UsuariosTO usuariosVO) {
+	public void setUsuariosVO(UsuariosVO usuariosVO) {
 		this.usuariosVO = usuariosVO;
 	}
 
-	public TipoAplicacionTO getTipoAplicacionVO() {
+	public TipoAplicacionVO getTipoAplicacionVO() {
 		return tipoAplicacionVO;
 	}
 
-	public void setTipoAplicacionVO(TipoAplicacionTO tipoAplicacionVO) {
+	public void setTipoAplicacionVO(TipoAplicacionVO tipoAplicacionVO) {
 		this.tipoAplicacionVO = tipoAplicacionVO;
 	}
 
-	public NivelOperacionTO getNivelOperacionVO() {
+	public NivelOperacionVO getNivelOperacionVO() {
 		return nivelOperacionVO;
 	}
 
-	public void setNivelOperacionVO(NivelOperacionTO nivelOperacionVO) {
+	public void setNivelOperacionVO(NivelOperacionVO nivelOperacionVO) {
 		this.nivelOperacionVO = nivelOperacionVO;
 	}
 

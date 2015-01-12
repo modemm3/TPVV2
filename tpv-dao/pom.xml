@@ -9,6 +9,7 @@
   </parent>
   <groupId>com.edu.tpv.dao</groupId>
   <artifactId>tpv-dao</artifactId>
+  <packaging>jar</packaging>
   <name>tpv-dao</name>
   <url>http://maven.apache.org</url>
   <dependencies>

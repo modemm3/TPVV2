@@ -2,20 +2,20 @@ package com.edu.tpv.login.to;
 
 import com.edu.tpv.login.jdbc.dto.DTO;
 
-public class IntentosTO extends DTO{
+public class IntentosVO extends DTO{
 	
 	private static final long serialVersionUID = 8122194412823816167L;
-	private UsuariosTO usuariosVO;
+	private UsuariosVO usuariosVO;
 	private int noIntentos;
 	private int intentosMaximos;
 	private int minutos;
 	private boolean activo;
 
-	public IntentosTO() {
+	public IntentosVO() {
 		super();
 	}
 
-	public IntentosTO(int id, UsuariosTO usuariosVO, int noIntentos, int intentosMaximos, int minutos, boolean activo) {
+	public IntentosVO(int id, UsuariosVO usuariosVO, int noIntentos, int intentosMaximos, int minutos, boolean activo) {
 		this.id = id;
 		this.usuariosVO = usuariosVO;
 		this.noIntentos = noIntentos;
@@ -39,11 +39,11 @@ public class IntentosTO extends DTO{
 //		this.setTotalRegistros(intentos.getTotalRegistros());
 //	}
 
-	public UsuariosTO getUsuariosVO() {
+	public UsuariosVO getUsuariosVO() {
 		return usuariosVO;
 	}
 
-	public void setUsuariosVO(UsuariosTO usuariosVO) {
+	public void setUsuariosVO(UsuariosVO usuariosVO) {
 		this.usuariosVO = usuariosVO;
 	}
 

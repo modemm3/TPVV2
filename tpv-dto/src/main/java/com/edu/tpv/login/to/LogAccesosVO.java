@@ -4,20 +4,20 @@ import java.sql.Timestamp;
 
 import com.edu.tpv.login.jdbc.dto.DTO;
 
-public class LogAccesosTO extends DTO{
+public class LogAccesosVO extends DTO{
 	
 	private static final long serialVersionUID = -1234141293326620862L;
-	private ModuloOperacionalTO moduloOperacionalVO;
+	private ModuloOperacionalVO moduloOperacionalVO;
 	private Timestamp fechaAcceso;
-	private UsuariosTO usuariosVO;
+	private UsuariosVO usuariosVO;
 	private String ipPublica;
 	private String ipPrivada;
 
-	public LogAccesosTO() {
+	public LogAccesosVO() {
 		super();
 	}
 
-	public LogAccesosTO(int id, ModuloOperacionalTO moduloOperacionalVO, Timestamp fechaAcceso, UsuariosTO usuariosVO, String ipPublica, String ipPrivada) {
+	public LogAccesosVO(int id, ModuloOperacionalVO moduloOperacionalVO, Timestamp fechaAcceso, UsuariosVO usuariosVO, String ipPublica, String ipPrivada) {
 		this.id = id;
 		this.moduloOperacionalVO = moduloOperacionalVO;
 		this.fechaAcceso = fechaAcceso;
@@ -42,11 +42,11 @@ public class LogAccesosTO extends DTO{
 //		this.setTotalRegistros(logAccesos.getTotalRegistros());
 //	}
 
-	public ModuloOperacionalTO getModuloOperacionalVO() {
+	public ModuloOperacionalVO getModuloOperacionalVO() {
 		return moduloOperacionalVO;
 	}
 
-	public void setModuloOperacionalVO(ModuloOperacionalTO moduloOperacionalVO) {
+	public void setModuloOperacionalVO(ModuloOperacionalVO moduloOperacionalVO) {
 		this.moduloOperacionalVO = moduloOperacionalVO;
 	}
 
@@ -58,11 +58,11 @@ public class LogAccesosTO extends DTO{
 		this.fechaAcceso = fechaAcceso;
 	}
 
-	public UsuariosTO getUsuariosVO() {
+	public UsuariosVO getUsuariosVO() {
 		return usuariosVO;
 	}
 
-	public void setUsuariosVO(UsuariosTO usuariosVO) {
+	public void setUsuariosVO(UsuariosVO usuariosVO) {
 		this.usuariosVO = usuariosVO;
 	}
 

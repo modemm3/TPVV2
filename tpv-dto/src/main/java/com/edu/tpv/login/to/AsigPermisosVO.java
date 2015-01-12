@@ -5,15 +5,15 @@ import com.edu.tpv.login.jdbc.dto.DTO;
 public class AsigPermisosVO extends DTO
 {
 	private int id;
-	private UsuariosTO usuariosVO;
-	private ModuloOperacionalTO moduloOperacionalVO;
-	private EmpresasTO empresasVO;
+	private UsuariosVO usuariosVO;
+	private ModuloOperacionalVO moduloOperacionalVO;
+	private EmpresasVO empresasVO;
 	private String ente;
 	public AsigPermisosVO()
 	{
 		super();
 	}
-	public AsigPermisosVO(int id, UsuariosTO usuariosVO, ModuloOperacionalTO moduloOperacionalVO, EmpresasTO empresasVO)
+	public AsigPermisosVO(int id, UsuariosVO usuariosVO, ModuloOperacionalVO moduloOperacionalVO, EmpresasVO empresasVO)
 	{
 		this.id = id;
 		this.usuariosVO = usuariosVO;
@@ -28,8 +28,8 @@ public class AsigPermisosVO extends DTO
 //		this.empresasVO=new EmpresasVO(asigPermisos.getEmpresas());
 //	}
 	
-	public AsigPermisosVO(int id, UsuariosTO usuariosVO,
-			ModuloOperacionalTO moduloOperacionalVO, EmpresasTO empresasVO,
+	public AsigPermisosVO(int id, UsuariosVO usuariosVO,
+			ModuloOperacionalVO moduloOperacionalVO, EmpresasVO empresasVO,
 			String ente) {
 		this.id = id;
 		this.usuariosVO = usuariosVO;
@@ -37,27 +37,27 @@ public class AsigPermisosVO extends DTO
 		this.empresasVO = empresasVO;
 		this.ente = ente;
 	}
-	public UsuariosTO getUsuariosVO()
+	public UsuariosVO getUsuariosVO()
 	{
 		return usuariosVO;
 	}
-	public void setUsuariosVO(UsuariosTO usuariosVO)
+	public void setUsuariosVO(UsuariosVO usuariosVO)
 	{
 		this.usuariosVO = usuariosVO;
 	}
-	public ModuloOperacionalTO getModuloOperacionalVO()
+	public ModuloOperacionalVO getModuloOperacionalVO()
 	{
 		return moduloOperacionalVO;
 	}
-	public void setModuloOperacionalVO(ModuloOperacionalTO moduloOperacionalVO)
+	public void setModuloOperacionalVO(ModuloOperacionalVO moduloOperacionalVO)
 	{
 		this.moduloOperacionalVO = moduloOperacionalVO;
 	}
-	public EmpresasTO getEmpresasVO()
+	public EmpresasVO getEmpresasVO()
 	{
 		return empresasVO;
 	}
-	public void setEmpresasVO(EmpresasTO empresasVO)
+	public void setEmpresasVO(EmpresasVO empresasVO)
 	{
 		this.empresasVO = empresasVO;
 	}

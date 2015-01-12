@@ -2,17 +2,17 @@ package com.edu.tpv.login.to;
 
 import com.edu.tpv.login.jdbc.dto.DTO;
 
-public class HistoricoPasswordTO extends DTO{
+public class HistoricoPasswordVO extends DTO{
 	
-	private UsuariosTO usuariosVO;
+	private UsuariosVO usuariosVO;
 	private String password;
 	private boolean activo;
 
-	public HistoricoPasswordTO() {
+	public HistoricoPasswordVO() {
 		super();
 	}
 
-	public HistoricoPasswordTO(int id, UsuariosTO usuariosVO, String password, boolean activo) {
+	public HistoricoPasswordVO(int id, UsuariosVO usuariosVO, String password, boolean activo) {
 		this.id = id;
 		this.usuariosVO = usuariosVO;
 		this.password = password;
@@ -30,11 +30,11 @@ public class HistoricoPasswordTO extends DTO{
 //		this.setTotalRegistros(historicoPassword.getTotalRegistros());
 //	}
 
-	public UsuariosTO getUsuariosVO() {
+	public UsuariosVO getUsuariosVO() {
 		return usuariosVO;
 	}
 
-	public void setUsuariosVO(UsuariosTO usuariosVO) {
+	public void setUsuariosVO(UsuariosVO usuariosVO) {
 		this.usuariosVO = usuariosVO;
 	}
 

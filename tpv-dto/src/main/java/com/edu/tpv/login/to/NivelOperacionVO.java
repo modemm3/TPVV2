@@ -4,11 +4,11 @@ import java.io.Serializable;
 
 import com.edu.tpv.login.jdbc.dto.DTO;
 
-public class NivelOperacionTO extends DTO implements Serializable{
+public class NivelOperacionVO extends DTO implements Serializable{
 	
 	private int digitos;
 
-	public NivelOperacionTO(int id, String nombre, int digitos) {
+	public NivelOperacionVO(int id, String nombre, int digitos) {
 		this.id = id;
 		this.nombre = nombre;
 		this.digitos = digitos;
@@ -24,7 +24,7 @@ public class NivelOperacionTO extends DTO implements Serializable{
 //		this.setTotalRegistros(nivelOperacion.getTotalRegistros());
 //	}
 
-	public NivelOperacionTO() {
+	public NivelOperacionVO() {
 		super();
 	}
 

@@ -2,11 +2,11 @@ package com.edu.tpv.login.to;
 
 import com.edu.tpv.login.jdbc.dto.DTO;
 
-public class TipoAplicacionTO extends DTO{
+public class TipoAplicacionVO extends DTO{
 
 	
 
-	public TipoAplicacionTO() {
+	public TipoAplicacionVO() {
 		super();
 	}
 
@@ -20,7 +20,7 @@ public class TipoAplicacionTO extends DTO{
 //		this.setTotalRegistros(tipoAplicacion.getTotalRegistros());
 //	}
 
-	public TipoAplicacionTO(int id, String nombre, String descripcion) {
+	public TipoAplicacionVO(int id, String nombre, String descripcion) {
 		this.id = id;
 		this.nombre = nombre;
 		this.descripcion = descripcion;

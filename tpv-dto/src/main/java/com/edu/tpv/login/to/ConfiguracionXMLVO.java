@@ -2,7 +2,7 @@ package com.edu.tpv.login.to;
 
 import com.edu.tpv.login.jdbc.dto.DTO;
 
-public class ConfiguracionXMLTO extends DTO{
+public class ConfiguracionXMLVO extends DTO{
 	
 	
 	private String controlador;
@@ -10,15 +10,15 @@ public class ConfiguracionXMLTO extends DTO{
 	private String url;
 	private String nameUsuario;
 	private String lenguaje;
-	private EmpresasTO empresaVO;
-	private GrupoSistemasTO gpoSistemasVO;
+	private EmpresasVO empresaVO;
+	private GrupoSistemasVO gpoSistemasVO;
 
-	public ConfiguracionXMLTO() {
+	public ConfiguracionXMLVO() {
 		super();
 	}
 
-	public ConfiguracionXMLTO(int id, String controlador, String password, String url, String nameUsuario, String lenguaje, EmpresasTO empresa,
-			GrupoSistemasTO gpoSistemas) {
+	public ConfiguracionXMLVO(int id, String controlador, String password, String url, String nameUsuario, String lenguaje, EmpresasVO empresa,
+			GrupoSistemasVO gpoSistemas) {
 		this.id = id;
 		this.controlador = controlador;
 		this.password = password;
@@ -86,19 +86,19 @@ public class ConfiguracionXMLTO extends DTO{
 		this.lenguaje = lenguaje;
 	}
 
-	public EmpresasTO getEmpresaVO() {
+	public EmpresasVO getEmpresaVO() {
 		return empresaVO;
 	}
 
-	public void setEmpresaVO(EmpresasTO empresaVO) {
+	public void setEmpresaVO(EmpresasVO empresaVO) {
 		this.empresaVO = empresaVO;
 	}
 
-	public GrupoSistemasTO getGpoSistemasVO() {
+	public GrupoSistemasVO getGpoSistemasVO() {
 		return gpoSistemasVO;
 	}
 
-	public void setGpoSistemasVO(GrupoSistemasTO gpoSistemasVO) {
+	public void setGpoSistemasVO(GrupoSistemasVO gpoSistemasVO) {
 		this.gpoSistemasVO = gpoSistemasVO;
 	}
 }

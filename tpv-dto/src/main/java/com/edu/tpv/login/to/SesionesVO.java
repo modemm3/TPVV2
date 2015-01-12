@@ -4,18 +4,18 @@ import java.sql.Timestamp;
 
 import com.edu.tpv.login.jdbc.dto.DTO;
 
-public class SesionesTO extends DTO {
-	private UsuariosTO usuariosVO;
+public class SesionesVO extends DTO {
+	private UsuariosVO usuariosVO;
 	private String idSesiones;
 	private Timestamp fechaAcceso;
 	private Timestamp fechaUltimoAcceso;
 	private boolean activo;
 
-	public SesionesTO() {
+	public SesionesVO() {
 		super();
 	}
 
-	public SesionesTO(int id, UsuariosTO usuariosVO, String nameIdSesiones, Timestamp fechaAcceso, Timestamp fechaUltimoAcceso, boolean activo) {
+	public SesionesVO(int id, UsuariosVO usuariosVO, String nameIdSesiones, Timestamp fechaAcceso, Timestamp fechaUltimoAcceso, boolean activo) {
 		this.id = id;
 		this.usuariosVO = usuariosVO;
 		this.idSesiones = nameIdSesiones;
@@ -38,11 +38,11 @@ public class SesionesTO extends DTO {
 //		this.activo=sesiones.isActivo();
 //	}
 
-	public UsuariosTO getUsuariosVO() {
+	public UsuariosVO getUsuariosVO() {
 		return usuariosVO;
 	}
 
-	public void setUsuariosVO(UsuariosTO usuariosVO) {
+	public void setUsuariosVO(UsuariosVO usuariosVO) {
 		this.usuariosVO = usuariosVO;
 	}
 

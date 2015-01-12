@@ -2,11 +2,11 @@ package com.edu.tpv.login.to;
 
 import com.edu.tpv.login.jdbc.dto.DTO;
 
-public class RolTO extends DTO
+public class RolVO extends DTO
 {
-	private UsuariosTO usuarioVO;
-	private ModuloOperacionalTO moduloOperacional;
-	public RolTO()
+	private UsuariosVO usuarioVO;
+	private ModuloOperacionalVO moduloOperacional;
+	public RolVO()
 	{
 		super();
 	}
@@ -17,26 +17,26 @@ public class RolTO extends DTO
 //		this.moduloOperacional = new ModuloOperacionalVO(rol.getModuloOperacional());
 //	}
 	
-	public RolTO(int id, UsuariosTO usuarioVO, ModuloOperacionalTO moduloOperacional)
+	public RolVO(int id, UsuariosVO usuarioVO, ModuloOperacionalVO moduloOperacional)
 	{
 		this.id = id;
 		this.usuarioVO = usuarioVO;
 		this.moduloOperacional = moduloOperacional;
 	}
 
-	public UsuariosTO getUsuarioVO()
+	public UsuariosVO getUsuarioVO()
 	{
 		return usuarioVO;
 	}
-	public void setUsuarioVO(UsuariosTO usuarioVO)
+	public void setUsuarioVO(UsuariosVO usuarioVO)
 	{
 		this.usuarioVO = usuarioVO;
 	}
-	public ModuloOperacionalTO getModuloOperacional()
+	public ModuloOperacionalVO getModuloOperacional()
 	{
 		return moduloOperacional;
 	}
-	public void setModuloOperacional(ModuloOperacionalTO moduloOperacional)
+	public void setModuloOperacional(ModuloOperacionalVO moduloOperacional)
 	{
 		this.moduloOperacional = moduloOperacional;
 	}

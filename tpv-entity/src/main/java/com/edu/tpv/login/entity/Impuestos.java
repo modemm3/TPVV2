@@ -1,4 +1,4 @@
-package com.edu.tpv.entity;
+package com.edu.tpv.login.entity;
 
 public class Impuestos {
 	

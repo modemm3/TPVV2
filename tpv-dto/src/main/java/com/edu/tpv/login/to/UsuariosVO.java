@@ -4,27 +4,27 @@ import java.sql.Timestamp;
 
 import com.edu.tpv.login.jdbc.dto.DTO;
 
-public class UsuariosTO extends DTO
+public class UsuariosVO extends DTO
 {
 	
 	private int id;
-	private UsuarioDetalleTO usuarioDetalleVO;
+	private UsuarioDetalleVO usuarioDetalleVO;
 	private String nombre;
 	private String password;
 	private boolean activo;
 	private Timestamp fechaCreacion;
 	private Timestamp fechaModificacion;
-	private UsuariosTO usuarioModificaVO;
+	private UsuariosVO usuarioModificaVO;
 	private Timestamp ultimaFechaAcceso;
 	private Timestamp periodoCambioContrasenia;
 	private boolean habilitarCambioContrasenia;
 	private int noDiasAnticipadosCambContrasenia;
 	private int noSesiones;
-	private PreguntasSecretasTO preguntasSecretasVO;
+	private PreguntasSecretasVO preguntasSecretasVO;
 	private String respuestaSecreta;
 	
 	
-	public UsuariosTO()
+	public UsuariosVO()
 	{
 		super();
 	}
@@ -62,9 +62,9 @@ public class UsuariosTO extends DTO
 //		this.setTotalRegistros(usuario.getTotalRegistros());
 //	}
 
-	public UsuariosTO(int id, UsuarioDetalleTO usuarioDetalleVO, String nombre, String password, boolean activo, Timestamp fechaCreacion, Timestamp fechaModificacion, UsuariosTO usuarioModificaVO,
+	public UsuariosVO(int id, UsuarioDetalleVO usuarioDetalleVO, String nombre, String password, boolean activo, Timestamp fechaCreacion, Timestamp fechaModificacion, UsuariosVO usuarioModificaVO,
 			Timestamp ultimaFechaAcceso, Timestamp periodoCambioContrasenia, boolean habilitarCambioContrasenia, int noDiasAnticipadosCambContrasenia, int noSesiones,
-			PreguntasSecretasTO preguntasSecretasVO, String respuestaSecreta)
+			PreguntasSecretasVO preguntasSecretasVO, String respuestaSecreta)
 	{
 		super();
 		this.id = id;
@@ -93,18 +93,18 @@ public class UsuariosTO extends DTO
 	}
 	
 	
-	public UsuarioDetalleTO getUsuarioDetalleVO() {
+	public UsuarioDetalleVO getUsuarioDetalleVO() {
 		return usuarioDetalleVO;
 	}
-	public void setUsuarioDetalleVO(UsuarioDetalleTO usuarioDetalleVO) {
+	public void setUsuarioDetalleVO(UsuarioDetalleVO usuarioDetalleVO) {
 		this.usuarioDetalleVO = usuarioDetalleVO;
 	}
 	
 	
-	public PreguntasSecretasTO getPreguntasSecretasVO() {
+	public PreguntasSecretasVO getPreguntasSecretasVO() {
 		return preguntasSecretasVO;
 	}
-	public void setPreguntasSecretasVO(PreguntasSecretasTO preguntasSecretasVO) {
+	public void setPreguntasSecretasVO(PreguntasSecretasVO preguntasSecretasVO) {
 		this.preguntasSecretasVO = preguntasSecretasVO;
 	}
 	public String getNombre()
@@ -190,10 +190,10 @@ public class UsuariosTO extends DTO
 	}
 	
 	
-	public UsuariosTO getUsuarioModificaVO() {
+	public UsuariosVO getUsuarioModificaVO() {
 		return usuarioModificaVO;
 	}
-	public void setUsuarioModificaVO(UsuariosTO usuarioModificaVO) {
+	public void setUsuarioModificaVO(UsuariosVO usuarioModificaVO) {
 		this.usuarioModificaVO = usuarioModificaVO;
 	}
 	public String getRespuestaSecreta()

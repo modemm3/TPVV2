@@ -2,7 +2,7 @@ package com.edu.tpv.login.to;
 
 import com.edu.tpv.login.jdbc.dto.DTO;
 
-public class EmpresasTO extends DTO{
+public class EmpresasVO extends DTO{
 
 	private String tituloEmpresa;
 	private String primerTitulo;
@@ -17,11 +17,11 @@ public class EmpresasTO extends DTO{
 	private String regEstatal;
 	private String curp;
 
-	public EmpresasTO() {
+	public EmpresasVO() {
 		super();
 	}
 
-	public EmpresasTO(String idC, String tituloEmpresa, String primerTitulo, String segundoTitulo, String dirUno,
+	public EmpresasVO(String idC, String tituloEmpresa, String primerTitulo, String segundoTitulo, String dirUno,
 			String dirDos, String rfc, String padron, String iva, String imss, String regCamara, String regEstatal, String curp) {
 		this.idC = idC;
 		this.tituloEmpresa = tituloEmpresa;

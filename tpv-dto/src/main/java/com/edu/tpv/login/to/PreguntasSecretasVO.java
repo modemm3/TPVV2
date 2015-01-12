@@ -2,16 +2,16 @@ package com.edu.tpv.login.to;
 
 import com.edu.tpv.login.jdbc.dto.DTO;
 
-public class PreguntasSecretasTO extends DTO{
+public class PreguntasSecretasVO extends DTO{
 
 
 	private static final long serialVersionUID = -125188377079012086L;
 
-	public PreguntasSecretasTO() {
+	public PreguntasSecretasVO() {
 		super();
 	}
 
-	public PreguntasSecretasTO(int id, String nombre) {
+	public PreguntasSecretasVO(int id, String nombre) {
 		this.id = id;
 		this.nombre = nombre;
 	}

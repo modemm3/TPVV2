@@ -1,4 +1,4 @@
-package com.edu.tpv.entity;
+package com.edu.tpv.login.entity;
 
 import java.sql.Timestamp;
 import java.util.Date;

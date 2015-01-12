@@ -9,6 +9,7 @@
   </parent>
   <groupId>com.edu.tpv.entity</groupId>
   <artifactId>tpv-entity</artifactId>
+  <packaging>jar</packaging>
   <version>1.0-SNAPSHOT</version>
   <name>tpv-entity</name>
   <url>http://maven.apache.org</url>
@@ -83,4 +84,16 @@
     <maven.compiler.source>1.7</maven.compiler.source>
     <maven.compiler.target>1.7</maven.compiler.target>
   </properties>
+	<build>
+		<resources>
+			<resource>
+				<directory>src/main/java/com/edu/tpv/login/map/</directory>
+				<targetPath>com/edu/tpv/login/map/</targetPath>
+				<includes>
+					<include>*.hbm.xml</include>
+				</includes>
+			</resource>
+		</resources>
+
+	</build>
 </project>

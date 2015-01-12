@@ -3,7 +3,7 @@ package com.edu.tpv.login.to;
 import com.edu.tpv.login.jdbc.dto.DTO;
 
 
-public class BarraMesesTO extends DTO {
+public class BarraMesesVO extends DTO {
 	
 	private String anio;
 	private String mes;

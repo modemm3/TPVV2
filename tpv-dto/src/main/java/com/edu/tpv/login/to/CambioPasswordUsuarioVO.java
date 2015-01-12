@@ -2,18 +2,18 @@ package com.edu.tpv.login.to;
 
 import com.edu.tpv.login.jdbc.dto.DTO;
 
-public class CambioPasswordUsuarioTO extends  DTO{
+public class CambioPasswordUsuarioVO extends  DTO{
 
-	private UsuariosTO usuarioVO=null;
+	private UsuariosVO usuarioVO=null;
 	private String password;
 	private String passwordNuevo;
-	private PreguntasSecretasTO preguntasSecretasVO=new PreguntasSecretasTO();
+	private PreguntasSecretasVO preguntasSecretasVO=new PreguntasSecretasVO();
 	private String respuestaSecreta;
 	
-	public UsuariosTO getUsuarioVO() {
+	public UsuariosVO getUsuarioVO() {
 		return usuarioVO;
 	}
-	public void setUsuarioVO(UsuariosTO usuarioVO) {
+	public void setUsuarioVO(UsuariosVO usuarioVO) {
 		this.usuarioVO = usuarioVO;
 	}
 	public String getPassword() {
@@ -28,10 +28,10 @@ public class CambioPasswordUsuarioTO extends  DTO{
 	public void setPasswordNuevo(String passwordNuevo) {
 		this.passwordNuevo = passwordNuevo;
 	}
-	public PreguntasSecretasTO getPreguntasSecretasVO() {
+	public PreguntasSecretasVO getPreguntasSecretasVO() {
 		return preguntasSecretasVO;
 	}
-	public void setPreguntasSecretasVO(PreguntasSecretasTO preguntasSecretasVO) {
+	public void setPreguntasSecretasVO(PreguntasSecretasVO preguntasSecretasVO) {
 		this.preguntasSecretasVO = preguntasSecretasVO;
 	}
 	public String getRespuestaSecreta() {

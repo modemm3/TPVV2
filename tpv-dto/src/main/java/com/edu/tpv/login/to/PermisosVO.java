@@ -2,7 +2,7 @@ package com.edu.tpv.login.to;
 
 import com.edu.tpv.login.jdbc.dto.DTO;
 
-public class PermisosTO extends DTO{
+public class PermisosVO extends DTO{
 	
 	private int idEmpleado;
 	private String idEmpresa; 
