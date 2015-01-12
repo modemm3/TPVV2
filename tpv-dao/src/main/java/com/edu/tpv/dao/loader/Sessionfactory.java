@@ -73,38 +73,6 @@ public final class Sessionfactory {
 		}
 		LOGGER.info("Document: [{}]",documento.asXML());
 		return loadXMLFrom(documento.asXML());
-		
-		
-//		Document documento= DocumentHelper.createDocument();
-//		documento.addDocType("hibernate-configuration", "-//Hibernate/Hibernate Configuration DTD 3.0//EN", "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd");
-//		Element padre= documento.addElement("hibernate-configuration").addAttribute("name","xmlns=\"http://www.hibernate.org/xsd/hibernate-configuration");
-//		Element hijo= padre.addElement("session-factory");
-//		Element nieto2= hijo.addElement("property").addAttribute("name", "hibernate.connection.driver_class");
-//		nieto2.setText(cnfVO.getDriverClass());//Driver
-//		Element nieto3= hijo.addElement("property").addAttribute("name", "hibernate.connection.password");
-//		nieto3.setText(cnfVO.getPassword());//password
-//		Element nieto4= hijo.addElement("property").addAttribute("name", "hibernate.connection.url");
-//		nieto4.setText(cnfVO.getUrl());//url
-//		Element nieto5= hijo.addElement("property").addAttribute("name", "hibernate.connection.username");
-//		nieto5.setText(cnfVO.getUsername());//usuario
-//		Element nieto6= hijo.addElement("property").addAttribute("name", "hibernate.dialect");
-//		nieto6.setText(cnfVO.getDialect());//lenguaje
-//		Element nieto8= hijo.addElement("property").addAttribute("name", "hibernate.show_sql");
-//		nieto8.setText("true");//showSQL
-//		Element nieto9 = hijo.addElement("property").addAttribute("name", "hibernate.connection.CharSet");
-//		nieto9.setText("utf8");
-//		Element nieto10 = hijo.addElement("property").addAttribute("name", "hibernate.connection.characterEncoding");
-//		nieto10.setText("utf8");
-//		Element nieto11 = hijo.addElement("property").addAttribute("name", "hibernate.connection.useUnicode");
-//		nieto11.setText("true");
-//		MappingDAO mapeo= new MappingDAO();
-//			List <MappingTO> lstMapeos=mapeo.getMappingByGroupSystem(Integer.parseInt(configurationLoader.getInitialDBId()));
-//			for(MappingTO m:lstMapeos)
-//			{
-//				hijo.addElement("mapping").addAttribute("resource", m.getName());
-//			}
-//			LOGGER.info("Document: [{}]",documento.asXML());
-//		return loadXMLFrom(documento.asXML());		
 	}
 
 	private static org.w3c.dom.Document loadXMLFrom(String xml) throws org.xml.sax.SAXException, java.io.IOException {
