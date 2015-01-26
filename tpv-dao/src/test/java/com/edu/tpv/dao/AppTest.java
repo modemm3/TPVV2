@@ -44,14 +44,14 @@ public class AppTest
     public void testApp()
     {
         LOGGER.info("Starting test");
-        ConnectionManager connectionManager=Sessionfactory.getInstance();
-        Session session=connectionManager.currentSession();
-        TipoAplicacion tipoAplicacion= new TipoAplicacion();
-        tipoAplicacion.setId(20);
-        tipoAplicacion.setNombre("test de datasource");
-        tipoAplicacion.setDescripcion("test de datasource with hibarnate");
-        session.beginTransaction();
-        session.save(tipoAplicacion);
-        session.getTransaction().commit();
+//        ConnectionManager connectionManager=Sessionfactory.getInstance();
+//        Session session=connectionManager.currentSession();
+//        TipoAplicacion tipoAplicacion= new TipoAplicacion();
+//        tipoAplicacion.setId(20);
+//        tipoAplicacion.setNombre("test de datasource");
+//        tipoAplicacion.setDescripcion("test de datasource with hibarnate");
+//        session.beginTransaction();
+//        session.save(tipoAplicacion);
+//        session.getTransaction().commit();
     }
 }

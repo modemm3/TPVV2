@@ -16,7 +16,7 @@ public class Build {
 		return entity.toDTO();
 	}
 	public Object convertToEntity(BuilderIFZ dto){
-		return dto.toDTO();
+		return dto.toEntity();
 	}
 	
 }

@@ -6,6 +6,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Vector;
 
+import com.edu.tpv.login.entity.InterfaceEntityBase;
+
 public class PackageDAO
 {
 	private OperationsDAOIfz dao;

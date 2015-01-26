@@ -7,7 +7,7 @@ public class BuilderTest implements BuilderIFZ{
 	Object dto;
 	Object entity;
 	public void setDTO(Object dto){
-		this.dto=dto;;
+		this.dto=dto;
 	}
 	public void setEntity(Object entity){
 		this.entity=entity;
@@ -24,7 +24,7 @@ public class BuilderTest implements BuilderIFZ{
 
 	@Override
 	public Object toEntity() {
-		return null;
+		return entity;
 	}
 	
 	

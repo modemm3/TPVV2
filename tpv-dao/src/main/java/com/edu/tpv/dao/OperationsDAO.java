@@ -25,6 +25,8 @@ import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 import org.hibernate.internal.SessionImpl;
+
+import com.edu.tpv.login.entity.InterfaceEntityBase;
 @SuppressWarnings("unchecked")
 public class OperationsDAO extends Connection implements OperationsDAOIfz
 {

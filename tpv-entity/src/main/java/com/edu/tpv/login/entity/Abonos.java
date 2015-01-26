@@ -1,8 +1,9 @@
 package com.edu.tpv.login.entity;
 
+import java.net.InterfaceAddress;
 import java.util.Date;
 
-public class Abonos {
+public class Abonos extends EntityBase{
 	
 	private int id;
 	private int idCliente;

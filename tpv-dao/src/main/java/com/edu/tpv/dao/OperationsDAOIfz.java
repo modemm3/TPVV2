@@ -15,6 +15,8 @@ import java.util.TreeSet;
 import java.util.Vector;
 import java.util.WeakHashMap;
 
+import com.edu.tpv.login.entity.InterfaceEntityBase;
+
 public interface OperationsDAOIfz
 {
     public InterfaceEntityBase save(InterfaceEntityBase entity);

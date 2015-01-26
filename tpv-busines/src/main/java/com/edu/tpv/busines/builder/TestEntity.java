@@ -1,6 +1,8 @@
 package com.edu.tpv.busines.builder;
 
-public class TestEntity {
+import com.edu.tpv.login.entity.EntityBase;
+
+public class TestEntity  extends EntityBase{
 	private int id;
 	private String name;
 	private String description;
